@@ -11,6 +11,11 @@
 
 */
 
+/*
+The header exchange.h, which declares the exchange class defines the _exchangeclass symbol. 
+so the first line is just detecting if that symbol is already there. 
+If it is, the pass function - which will be called from C - is wrapped in an extern block.
+*/
 #ifdef _exchangeclass
 extern "C" {
 #endif
